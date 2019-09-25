@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +11,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.timeSlot:hover {
+  cursor: pointer;
+}
+
+.time {
+  text-align: center;
+}
+
+.list-group-item-action {
+  font-size: 0.7em;
+}
+
+.input-group-text {
+  width: 6em;
 }
