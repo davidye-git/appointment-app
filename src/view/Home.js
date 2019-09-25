@@ -45,7 +45,7 @@ class Home extends React.Component {
     this.setState({appointments: emptyAppointments});
   }
 
-  openAndPopulateModal = (e) => {
+  onOpenModal = (e) => {
     let selectedTime = e.target.parentElement.firstChild.innerText;
 
     let selectedAppointment = this.state.appointments.filter ( 
@@ -83,7 +83,7 @@ class Home extends React.Component {
           <Col>
             <TimeTable 
               appointments={this.state.appointments} 
-              openModal={this.openAndPopulateModal} />
+              openModal={this.onOpenModal} />
           </Col>
           <Col sm="1"></Col>
         </Row>
