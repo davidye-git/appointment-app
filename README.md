@@ -28,7 +28,7 @@ Enzyme<br>
 
 ## How to Run
 
-Please have Node installed
+Please have Node installed<br>
 In the project directory, you can run:
 
 ### `npm install`
