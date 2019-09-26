@@ -26,9 +26,13 @@ Enzyme<br>
 ![Appointment Screenshot2](https://i.ibb.co/D16vdRZ/Appointment-Application-Screenshot2.png)
 ![Appointment Screenshot3](https://i.ibb.co/Y0TbJ4H/Appointment-Application-Screenshot3.png)
 
-## Available Scripts
+## How to Run
 
+Please have Node installed
 In the project directory, you can run:
+
+### `npm install`
+Installs all dependencies from the package.json file
 
 ### `npm start`
 
