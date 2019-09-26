@@ -56,8 +56,8 @@ class Home extends React.Component {
 
   updateAppointmentInformation = () => {
     let time = document.querySelector('.modal-title').innerText;
-    let newName = document.querySelector('#modalInputName').value
-    let newPhone = document.querySelector('#modalInputPhone').value
+    let newName = document.querySelector('.modalInputName').value
+    let newPhone = document.querySelector('.modalInputPhone').value
 
     let newAppointment = new Appointment(time);
     newAppointment.name = newName;

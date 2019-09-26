@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter,
          InputGroup, InputGroupAddon, Input } from 'reactstrap';
+import Appointment from '../models/Appointment';
 
 export default class AppointmentModal extends React.Component {
   render () {
@@ -13,11 +13,11 @@ export default class AppointmentModal extends React.Component {
         <ModalBody>
             <InputGroup>
               <InputGroupAddon addonType="prepend">Name:</InputGroupAddon>
-              <Input placeholder="Name" id='modalInputName' defaultValue={this.props.selectedAppointment.name}/>
+              <Input placeholder="Name" className='modalInputName' defaultValue={this.props.selectedAppointment.name}/>
             </InputGroup>
             <InputGroup>
               <InputGroupAddon addonType="prepend">Contact:</InputGroupAddon>
-              <Input placeholder="Phone" id='modalInputPhone' defaultValue={this.props.selectedAppointment.phone}/>
+              <Input placeholder="Phone" className='modalInputPhone' defaultValue={this.props.selectedAppointment.phone}/>
             </InputGroup>
         </ModalBody>
         <ModalFooter>
@@ -26,5 +26,12 @@ export default class AppointmentModal extends React.Component {
         </ModalFooter>
       </Modal>
     );
+  }
+
+  static defaultProps = {
+    selectedAppointment: new Appointment(''),
+    isOpen: true,
+    toggle: () => {},
+    submit: () => {}
   }
 };
